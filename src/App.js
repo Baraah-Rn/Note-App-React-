@@ -1,35 +1,31 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import NotesList from "./components/NotesList";
 import Search from "./components/Search";
 import Header from "./components/Header";
 
 const App = () => {
-  const [notes, setNotes] = useState([
-    {
-      id: uuidv4(),
-      text: "text1",
-      date: "12/12/2012",
-    },
-    {
-      id: uuidv4(),
-      text: "text2",
-      date: "12/12/2012",
-    },
-    {
-      id: uuidv4(),
-      text: "text3",
-      date: "12/12/2012",
-    },
-    {
-      id: uuidv4(),
-      text: "text4",
-      date: "12/12/2012",
-    },
-  ]);
+  const [notes, setNotes] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState("false");
+
+  // useEffect(() => {
+	// 	const savedNotes = JSON.parse(
+	// 		localStorage.getItem('react-notes-app-data')
+	// 	);
+
+	// 	if (savedNotes) {
+	// 		setNotes(savedNotes);
+	// 	}
+	// }, []);
+
+	useEffect(() => {
+		localStorage.setItem(
+			'react-notes-app-data',
+			JSON.stringify(notes)
+		);
+	}, [notes]);
 
   const addNote = (noteText) => {
     const date = new Date();
