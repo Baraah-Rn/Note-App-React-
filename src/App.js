@@ -24,10 +24,21 @@ const App=()=> {
   },
   ]);
 
+const addNote = (noteText)=>{
+const date = new Date();
+const newNote = {
+  id:uuidv4 (),
+  text : noteText,
+  date : date.toLocaleDateString()
+}
+const newNotes = [...notes, newNote]
+setNotes(newNotes)
+}
+
 
   return (
     <div className='container'>
-      <NotesList notes={notes}/>
+      <NotesList notes={notes} handleAddNote={addNote}/>
     </div>
   );
 }

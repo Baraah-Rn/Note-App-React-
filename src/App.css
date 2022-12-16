@@ -1,8 +1,8 @@
 :root {
   ---background-color-note: #195890;
   --background-color-newNote: rgb(200, 37, 108);
-  --font-color: snow;
-  --border-radius: 10px;
+  --primary-color: snow;
+  --border-radius: 7px;
 }
 .container {
   max-width: 960px;
@@ -18,7 +18,7 @@
 
 .note {
   background-color: var(---background-color-note);
-  color: var(--font-color);
+  color: var(--primary-color);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -38,8 +38,21 @@ textarea:focus{
   outline: none;
 }
 textarea::placeholder{
-  color:var(--font-color);
+  color:var(--primary-color);
 }
+
+.save{
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  border: none;
+}
+.save:hover{
+  background-color:rgb(47, 47, 47) ;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .note-footer {
   display: flex;
   align-items: center;
