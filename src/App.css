@@ -1,7 +1,8 @@
 :root {
   ---background-color-note: #195890;
   --background-color-newNote: rgb(200, 37, 108);
-  --primary-color: snow;
+  --primary-color: rgb(212, 207, 207);
+  --secondary-color: rgb(47, 47, 47) ;
   --border-radius: 7px;
 }
 .container {
@@ -46,13 +47,14 @@ textarea::placeholder{
 }
 
 .save{
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) ;
+  color:var(--secondary-color);
   border-radius: var(--border-radius);
   padding: 10px 20px;
   border: none;
 }
 .save:hover{
-  background-color:rgb(47, 47, 47) ;
+  background-color:var(--secondary-color);
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -62,3 +64,27 @@ textarea::placeholder{
   align-items: center;
   justify-content: space-between;
 }
+
+.Search-box{
+display: flex;
+align-items: center;
+background-color: var(--primary-color) ;
+  color: var(--secondary-color);
+border-radius: var(--border-radius);
+padding: 5px;
+margin-bottom: 1.5em;
+height: 3rem;
+}
+.Search-box input{
+border: none;
+background-color: var(--primary-color);
+}
+
+.Search-box input:focus{
+  outline:none ;
+  }
+
+.search-icon{
+  padding-right: 6px;
+  padding-left: 6px;
+  }
