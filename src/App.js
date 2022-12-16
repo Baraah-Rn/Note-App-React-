@@ -3,6 +3,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import NotesList from "./components/NotesList";
 import Search from "./components/Search";
+import Header from "./components/Header";
 
 const App = () => {
   const [notes, setNotes] = useState([
@@ -28,6 +29,7 @@ const App = () => {
     },
   ]);
   const [searchText, setSearchText] = useState("");
+  const [darkMode, setDarkMode] = useState("false");
 
   const addNote = (noteText) => {
     const date = new Date();
@@ -46,16 +48,18 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <h1>My Notes</h1>
-      <Search handleSearch={setSearchText} />
-      <NotesList
-        notes={notes.filter((note) =>
-          note.text.toLowerCase().includes(searchText)
-        )}
-        handleAddNote={addNote}
-        handleDeleteNote={deleteNote}
-      />
+    <div className={`${darkMode && "dark-mode"}`}>
+      <div className="container">
+        <Header handleDarkMode={setDarkMode} />
+        <Search handleSearch={setSearchText} />
+        <NotesList
+          notes={notes.filter((note) =>
+            note.text.toLowerCase().includes(searchText)
+          )}
+          handleAddNote={addNote}
+          handleDeleteNote={deleteNote}
+        />
+      </div>
     </div>
   );
 };

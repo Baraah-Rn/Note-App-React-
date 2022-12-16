@@ -5,8 +5,15 @@
   --secondary-color: rgb(47, 47, 47) ;
   --border-radius: 7px;
 }
+.header-box{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .container {
   max-width: 960px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
  padding: 20px; 
@@ -46,14 +53,14 @@ textarea::placeholder{
   color:var(--primary-color);
 }
 
-.save{
+.btn{
   background-color: var(--primary-color) ;
   color:var(--secondary-color);
   border-radius: var(--border-radius);
   padding: 10px 20px;
   border: none;
 }
-.save:hover{
+.btn:hover{
   background-color:var(--secondary-color);
   color: var(--primary-color);
   cursor: pointer;
@@ -87,4 +94,12 @@ background-color: var(--primary-color);
 .search-icon{
   padding-right: 6px;
   padding-left: 6px;
+  }
+
+  .dark-mode{
+    background-color: var(--secondary-color);
+  }
+
+  .dark-mode h1{
+  color: var(--primary-color);
   }
