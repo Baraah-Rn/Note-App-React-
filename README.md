@@ -1,7 +1,7 @@
-# My Calculater
+# Note App
 
-I tried to  build an calculator without using any library to handle the operation 
-The app is responsive to all screen size. 
+In this app you can easily add a note to save, also you can delete it easily using delete icon.
+It will not take time if you want to search for a note using search bar.The app is responsive to all screen size. 
 have fun to try it in : https://frabjous-conkies-9b751e.netlify.app/
 
 ![Screenshot 2023-01-10 145941](https://user-images.githubusercontent.com/101180840/211571656-caac970f-0cdb-4ea9-9aaa-640e9da0f6ac.png)
