@@ -4,6 +4,9 @@ I tried to  build an calculator without using any library to handle the operatio
 The app is responsive to all screen size. 
 have fun to try it in : https://frabjous-conkies-9b751e.netlify.app/
 
+![Screenshot 2023-01-10 145941](https://user-images.githubusercontent.com/101180840/211571656-caac970f-0cdb-4ea9-9aaa-640e9da0f6ac.png)
+
+
 ![Screenshot 2023-01-10 150026](https://user-images.githubusercontent.com/101180840/211571401-2ee96255-e8e7-4714-bb50-85a40dd418c4.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
