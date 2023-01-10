@@ -1,10 +1,24 @@
-# Getting Started with Create React App
+# My Calculater
+
+I tried to  build an calculator without using any library to handle the operation 
+The app is responsive to all screen size. 
+have fun to try it in : https://chic-semolina-0c7c70.netlify.app/
+
+![Screenshot 2023-01-10 140755](https://user-images.githubusercontent.com/101180840/211559853-b236057f-5ab7-4382-ad6f-b9bf238d8072.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Run the comand in your comand line to insall all the necessary packages you need.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 ### `npm start`
 
@@ -13,11 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
